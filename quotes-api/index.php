@@ -9,11 +9,6 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light mb-3">
-        <div class="container-fluid">
-            <a class="navbar-brand mx-3" href="#"><i class="bi bi-code-slash"></i></a>
-        </div>
-    </nav>
     <div class="container">
         <h1>Quotes API</h1>
         <p>This is a simple API with collection of 50+ quotes for free!</p>
