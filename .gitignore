@@ -1,0 +1,66 @@
+# Node.js (NestJS)
+nest-api/node_modules/
+nest-api/npm-debug.log*
+nest-api/yarn-debug.log*
+nest-api/yarn-error.log*
+nest-api/package-lock.json
+
+# NestJS build directories
+nest-api/dist/
+nest-api/.out/
+nest-api/.build/
+
+# Environment variables (NestJS)
+nest-api/.env
+nest-api/.env.local
+nest-api/.env.development.local
+nest-api/.env.test.local
+nest-api/.env.production.local
+
+# TypeScript (NestJS)
+nest-api/*.tsbuildinfo
+
+# Logs (NestJS)
+nest-api/logs/
+nest-api/*.log
+
+# PHP (Laravel)
+laravel-api/vendor/
+laravel-api/node_modules/
+
+# Laravel Environment files
+laravel-api/.env
+laravel-api/.env.local
+laravel-api/.env.testing
+laravel-api/.env.production
+
+# Laravel Cache, Logs, and Storage
+laravel-api/storage/*.key
+laravel-api/storage/logs/*.log
+laravel-api/storage/framework/sessions/*
+laravel-api/storage/framework/views/*
+laravel-api/storage/framework/cache/data/*
+laravel-api/bootstrap/cache/*.php
+
+# Laravel IDE helper files
+laravel-api/_ide_helper.php
+laravel-api/_ide_helper_models.php
+
+# Laravel Test Coverage
+laravel-api/coverage/
+laravel-api/.nyc_output/
+
+# IDE files (both NestJS and Laravel)
+.vscode/
+nest-api/.vscode/
+laravel-api/.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# MacOS files
+.DS_Store
+
+# Temporary files (both NestJS and Laravel)
+tmp/
+temp/
