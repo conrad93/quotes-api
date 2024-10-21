@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, Post, Put } from "@nestjs/common";
+import { BadRequestException, Body, Controller, Get, Param, Post, Put } from "@nestjs/common";
 import { BlogService } from "./blog.service";
 import { Blog } from "./blog.schema";
 import { FilterQuery, ProjectionFields } from "mongoose";
@@ -10,11 +10,17 @@ export class BlogController {
 
     @Get(":id")
     async getBlogById(@Param("id") id: string): Promise<Blog> {
+        if (!id) {
+            throw new BadRequestException("Id is required");
+        }
         return this.blogService.findOne(id);
     }
 
     @Post()
     async createBlog(@Body() blogData: Blog): Promise<Blog> {
+        if (!blogData.title || !blogData.content) {
+            throw new BadRequestException("Title and content are required");
+        }
         return this.blogService.create(blogData);
     }
 
@@ -30,6 +36,9 @@ export class BlogController {
 
     @Put(":id")
     async updateBlog(@Param("id") id: string, @Body() blogData: Blog): Promise<Blog> {
+        if (!id) {
+            throw new BadRequestException("Id is required");
+        }
         return this.blogService.update(id, blogData);
     }
 }

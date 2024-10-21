@@ -28,7 +28,7 @@ export class Blog extends Document {
   @Prop()
   author: string;
 
-  @Prop({ required: true, default: Status.ACTIVE, enum: Status })
+  @Prop({ default: Status.ACTIVE, enum: Status })
   status: Status;
 
 }
