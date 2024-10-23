@@ -50,10 +50,20 @@ laravel-api/_ide_helper_models.php
 laravel-api/coverage/
 laravel-api/.nyc_output/
 
-# IDE files (both NestJS and Laravel)
+# Angular (Client)
+angular-client/node_modules/
+angular-client/dist/
+angular-client/.angular/
+angular-client/npm-debug.log*
+angular-client/yarn-debug.log*
+angular-client/yarn-error.log*
+angular-client/package-lock.json
+
+# IDE files (NestJS, Laravel, and Angular)
 .vscode/
 nest-api/.vscode/
 laravel-api/.vscode/
+angular-client/.vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
@@ -61,6 +71,6 @@ laravel-api/.vscode/
 # MacOS files
 .DS_Store
 
-# Temporary files (both NestJS and Laravel)
+# Temporary files (both NestJS, Laravel, and Angular)
 tmp/
 temp/
