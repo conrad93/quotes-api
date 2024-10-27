@@ -1,1 +1,18 @@
-<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+        <mat-nav-list>
+            <a mat-list-item routerLink="home" routerLinkActive="active">Home</a>
+            <a mat-list-item routerLink="blog-list" routerLinkActive="active">Blogs</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar>            
+            <button mat-icon-button (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </mat-toolbar>
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
