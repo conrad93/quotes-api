@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { MaterialModule } from './modules/material/material.module';
 import { CommonModule } from '@angular/common';
+import { AppComponentModule } from './modules/app-component/app-component.module';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,8 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     RouterOutlet,
     RouterModule,
-    MaterialModule
+    MaterialModule,
+    AppComponentModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

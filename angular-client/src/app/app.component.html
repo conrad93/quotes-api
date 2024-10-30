@@ -1,6 +1,6 @@
-<mat-sidenav-container>
-    <mat-sidenav #sidenav mode="side" [(opened)]="opened">
-        <mat-nav-list>
+<mat-sidenav-container class="min-h-screen">
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened" class="p-4">
+        <mat-nav-list class="space-y-2">
             <a mat-list-item routerLink="home" routerLinkActive="active">Home</a>
             <a mat-list-item routerLink="blog-list" routerLinkActive="active">Blogs</a>
         </mat-nav-list>
@@ -11,7 +11,7 @@
                 <mat-icon>menu</mat-icon>
             </button>
         </mat-toolbar>
-        <div>
+        <div class="p-4">
             <router-outlet></router-outlet>
         </div>
     </mat-sidenav-content>
